@@ -1,4 +1,4 @@
-﻿@charset "utf-8";
+﻿@charset "utf-8"; /* encoding used in style sheet */
 
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
@@ -13,7 +13,7 @@
 
 */
 
-
+/* linked in web fonts from resources */
 @font-face {
     font-family: cac_champagne;
     src: url('../resources/cac_champagne.woff') format('woff'),
@@ -25,18 +25,20 @@
     src: url('../resources/DobkinPlain.woff') format('woff'),
     url('../resources/DobkinPlain.ttf') format('truetype');
 }
-
+/* window */
 html{
-    background-color: rosybrown;
-    color: rgba(153, 238, 193, 0.801);
+    background-color: rosybrown;  /* Overall window background color */
+    color: rgba(153, 238, 193, 0.801); /* opacity modified for text */
     text-shadow: .8px .8px #071f2949;
 }
-
+/* content body */
 body{
     background-color: hsla(210, 26%, 56%, 0.746);
 }
 
 
+/* Header element */
+    /* Nav focused modifications */
 header > nav{
     
     background-color: royalblue;
@@ -77,10 +79,19 @@ nav ul li:hover > a{
     color:rgb(49, 49, 49) !important;
 
 }
-
+/* Section Elements */
 section{
     margin-top: 25px;
-    padding: 8px;
+    
+}
+/* Section right specific */
+section#rightcol {
+    margin-right:0px !important;  /* margin modified and overwrite of layout css */
+    
+}
+
+section#rightcol ul li {
+    list-style-type: none;
 }
 
 section#rightcol > nav > ul li a:visited{
@@ -96,12 +107,35 @@ section#rightcol > nav > ul li a:link{
     text-decoration: none;
     
 }
+/* section left specific */
+section#leftcol{  /* Padding and margin modified and overwrite of layout css */
+    margin-left:8px !important;
+    padding: 5px;
+    border: solid darkolivegreen 2px;
+    border-bottom: none;
+    
+}
 
+section#leftcol > h1 {
+    font-family: DobkinPlain;
+    font-size: 2.5em;
+}
+
+section#leftcol > p:nth-of-type(even){ /* pseudo class selector */
+    background-color: hsla(211, 19%, 39%, 0.198);
+}
+
+section#leftcol > p:nth-of-type(1)::first-letter{ /* pseudo class and pseudo element selector  */
+    font-weight: bold;
+    font-size: 1.7em;
+    font-family: DobkinPlain;
+}
+/* Aside elements */
 aside {
     padding: 8px;
     background-color: rgba(49, 49, 49, 0.219);
 }
-
+/* Aside list specific */
 ul li {
     list-style-type: circle;
 }
@@ -128,6 +162,22 @@ aside ul li a:link{
     text-decoration: none;
 }
 
+
 aside ul li a:hover{
     text-decoration: underline;
 }
+
+/* footer formatting */
+
+footer {
+
+    background-color: darkslategray;
+    text-align: center;
+    padding:25px;
+    margin-bottom: 25px;
+}
+
+/* blockquote generated quote content */
+
+blockquote::before{content:open-quote;}
+blockquote::after{content:close-quote;}
