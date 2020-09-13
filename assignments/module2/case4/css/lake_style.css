@@ -1,0 +1,133 @@
+﻿@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: Jeffrey Arriaga
+   Date:   9/12/2020
+   
+   Filename: lake_styles.css
+
+*/
+
+
+@font-face {
+    font-family: cac_champagne;
+    src: url('../resources/cac_champagne.woff') format('woff'),
+    url('../resources/cac_champagne.ttf') format('truetype');
+}
+
+@font-face{
+    font-family: DobkinPlain;
+    src: url('../resources/DobkinPlain.woff') format('woff'),
+    url('../resources/DobkinPlain.ttf') format('truetype');
+}
+
+html{
+    background-color: rosybrown;
+    color: rgba(153, 238, 193, 0.801);
+    text-shadow: .8px .8px #071f2949;
+}
+
+body{
+    background-color: hsla(210, 26%, 56%, 0.746);
+}
+
+
+header > nav{
+    
+    background-color: royalblue;
+}
+
+header > nav > ul li{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight:bold;
+    font-size: 1.5em;
+    font-family: cac_champagne;
+}
+
+header > nav > ul li a:visited{
+    color: rosybrown;
+    font-weight: 2em;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+header > nav > ul li a:link{
+    color: rosybrown;
+    font-weight: 2em;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+nav ul li:hover{
+
+    background-color: blanchedalmond;
+    color:rgb(49, 49, 49);
+
+}
+
+nav ul li:hover > a{
+
+    background-color: blanchedalmond;
+    color:rgb(49, 49, 49) !important;
+
+}
+
+section{
+    margin-top: 25px;
+    padding: 8px;
+}
+
+section#rightcol > nav > ul li a:visited{
+    color: rgb(19, 40, 104);
+    font-weight: 2em;
+    text-decoration: none;
+    
+}
+
+section#rightcol > nav > ul li a:link{
+    color: rgb(19, 40, 104);
+    font-weight: 2em;
+    text-decoration: none;
+    
+}
+
+aside {
+    padding: 8px;
+    background-color: rgba(49, 49, 49, 0.219);
+}
+
+ul li {
+    list-style-type: circle;
+}
+
+aside ul {
+    list-style-position: inside;
+    text-indent: 25px;
+}
+
+aside ul li{
+    margin-bottom: 10px;
+}
+
+aside ul li a:visited{
+    color: rgb(19, 40, 104);
+    font-weight: 2em;
+    text-decoration: none;
+    
+}
+
+aside ul li a:link{
+    color: rgb(19, 40, 104);
+    font-weight: 2em;
+    text-decoration: none;
+}
+
+aside ul li a:hover{
+    text-decoration: underline;
+}
