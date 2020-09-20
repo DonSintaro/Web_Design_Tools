@@ -14,19 +14,50 @@
 */
 
 /* Window and Body Styles */
+html{
+    height: 100%;
+}
 
+body{
+    width: 95%;
+    min-width: 640px;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+}
+
+header, ul, nav, li, a {
+    box-sizing: border-box;
+}
 
 
 
 /* Row Styles */
 
+/* This may not be required, said to just expand, not to clear prev columns also --------------- */
+.row{
+    clear:both;
+}
+/* ------------------------ */
+
+.row::after {
+    clear:both;
+    content:"";
+    display:block;
+
+}
 
 
 
 
 /* Page Header Styles */
 
-
+img[src$="sp_logo.png"]{
+    display:block;
+    width: 70%;
+    float:left;
+}
 
 
 
