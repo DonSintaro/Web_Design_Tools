@@ -40,21 +40,63 @@ article > p:first-of-type::first-letter{
  
 
 /* Aside Styles */
-
+aside {
+    width: 768px;
+    float: left;
+}
 
 
 
 /* Map Styles */
 
+div#battleMap{
+    width: 688px;
+    margin: 20px auto 20px auto;
+    position: relative;
+}
 
-
+img#mapImage{
+    display:block;
+    width: 100%;
+}
 
 /* Interactive Map Styles */
+a.battleMarkers{
+    position: absolute;
+}
 
-
+a#marker1{
+    top:220px;
+    left:340px;
+}
+a#marker2{
+   top: 194px;
+   left:  358px;
+}
+a#marker3{
+    top:  202px;
+   left:  400px;
+}
+a#marker4{
+    top:  217px;
+   left:  452px;
+}
+a#marker5{
+    top:  229px;
+   left:  498px;
+}
+a#marker6{
+    top:  246px;
+   left:  544px;
+}
 
 
 /* Map Information Styles */
 
+div.mapInfo{
+    display:none;
+}
 
-
+a.battleMarkers:hover + div.mapInfo {
+    display:block;
+}
