@@ -35,12 +35,6 @@ header, ul, nav, li, a {
 
 /* Row Styles */
 
-/* This may not be required, said to just expand, not to clear prev columns also --------------- */
-.row{
-    clear:both;
-}
-/* ------------------------ */
-
 .row::after {
     clear:both;
     content:"";
@@ -59,30 +53,97 @@ img[src$="sp_logo.png"]{
     float:left;
 }
 
+/* The text gets a little confusing here, it says 30% width of the header, thus width should apply to nav element as width % is based on it's parent element but the text makes it sound as if it should apply to the unordered list ul element by saying navigation list. While it would still work on ul, it isn't the proper place to do the width style if your basing the list off of header*/
 
+header > nav {
+    float: left;
+    padding-right:2%;
+    padding-left:2%;
+    width: 30%;
+}
+
+header > nav > ul > li > a {
+    display:block;
+    width:100%;
+}
 
 
 /* Horizontal Navigation List Styles */
-
+nav.horizontal > ul > li {
+    display:block;
+    width: 12.5%;
+    float: left;
+}
 
 
 
 /* Topics Styles */
 
+ul#topics > li {
+    display:block;
+    width: 20%;
+    float:left;
+    margin-left:0%;
+    margin-right:1.5%;
+}
 
+/* It specifically said first item and last item, meaning it wanted it applied to the items themselves not the ul which would have been easier */
 
+ul#topics > li:first-of-type{
+    margin-left: 7.75%;
+}
 
+ul#topics > li:last-of-type{
+    margin-right: 7.75%;
+}
+
+ul#topics > li > img {
+    display:block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
 
 
 /* HR Styles */
 
+hr{
+    width: 50%;
+}
 
 
 
 /* Customer Comment Styles */
+ul#comments{
+    width: 75%;
+    margin: 40px auto 40px auto;
+}
+ul#comments > li {
+    display:block;
+    width: 50%;
+    float:left;
+    margin-bottom:30px;
 
+}
+
+ul#comments > li > img {
+    display:block;
+    width: 20%;
+    float:left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+ul#comments > li > p {
+    float:left;
+    width: 70%;
+}
 
 
 /* Footer Styles */
 
+footer{
+    clear:both;
+}
 
