@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 8
+   Review Assignment
+
+   Cinema Penguin Styles for Animation
+      Author: Jeffrey Arriaga
+      Date:   11/12/2020
+
+   Filename: cp_animate2.css
+
+*/
+
+/* Transition Styles */
+nav#topLinks a {
+  color:rgb(255, 255, 255);
+  text-shadow: 1px -1px 1px rgba(0, 0, 0, 1);
+  transform: scale(1,1) translateY(0px);
+-moz-transform: scale(1,1) translateY(0px);
+-o-transform: scale(1,1) translateY(0px);
+-ms-transform: scale(1,1) translateY(0px);
+-webkit-transform: scale(1,1) translateY(0px);
+
+
+
+
+
+
+  transition: all 1.2s linear;
+  -moz-transition: all 1.2s linear;
+  -o-transition: all 1.2s linear;
+  -ms-transition: all 1.2s linear;
+  -webkit-transition: all 1.2s linear;
+}
+
+nav#topLinks a:hover {
+  color:rgb(255, 183, 25);
+  text-shadow: 0px 15px 4px rgba(0, 0, 0, 0.5);
+  transform: scale(2,2) translateY(-15px);
+-moz-transform: scale(2,2) translateY(-15px);
+-o-transform: scale(2,2) translateY(-15px);
+-ms-transform: scale(2,2) translateY(-15px);
+-webkit-transform: scale(2,2) translateY(-15px);
+}
+
+
+
+/* Marquee Styles */
+div#marquee {
+  position: relative;
+}
+
+div#marquee > table {
+  position: absolute;
+}
+
+
+
+/* Keyframe Styles */
+  @keyframes scroll {
+    0% {top:250px;}
+    100% {top:-1300px;}
+  }
+
+
+
+/* Animation Styles */
+
+
+div#marquee > table {
+  animation: scroll 50s linear infinite;
+}
+
+div#marquee:hover > table {
+  animation-play-state: paused;
+}
+
+
+
+
+
+
+
+
+
+
+

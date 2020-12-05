@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+
+header {
+    position: fixed;
+    top:0;
+    width: 100vw;
+    height: 300px;
+}
+
+#subHeader {
+    text-align: center;
+    padding: 60px;
+    
+}
+
+
+
+
+
+#content{
+    margin-top: 300px;
+}
+
+
+
+
+
