@@ -1,28 +1,67 @@
 @charset "utf-8";
 
 
+body{
+    background: url(../images/paper-1074131_1920.jpg);
+}
+
 header {
     position: fixed;
     top:0;
     width: 100vw;
-    height: 300px;
+    max-height: 300px;
+    background-color: brown;
 }
 
 #subHeader {
     text-align: center;
-    padding: 60px;
+    padding: calc(2vh + 25px);
+    font-family: Trebuchet MS, Garamond, Tahoma ;
+    font-size: large;
+}
+
+nav {
+    padding:20px 7vw 20px 7vw;
+    background-color: darkorange;
+    font-size: calc(12px + 0.7vh);
+    max-height: calc(12px + 0.7vh + 40px);
+}
+
+nav#navBar > ul {
+    max-width: 86vw;
+}
+
+nav#navBar > ul > li{
+    display: inline-block;
+    width: calc(25% - 33.5px);
+    padding-left:15px;
+    padding-right:15px;
+    text-align: center;
+    white-space: nowrap;
+
+}
+
+nav#navBar > ul > li:first-of-type{
     
 }
 
 
-
-
-
-#content{
-    margin-top: 300px;
+nav#navBar > ul > li:last-of-type{
+    
+   
 }
 
 
+#content{
+    margin: 300px 7vw 50px 7vw;
+    
+    padding: 30px 15px 30px 15px;
+    background-color: beige;
+}
+
+footer{
+    background-color: darkturquoise;
+}
 
 
 
