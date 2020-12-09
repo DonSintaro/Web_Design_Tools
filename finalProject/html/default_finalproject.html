@@ -4,6 +4,7 @@
 <head>
 	<title>ITSE 1301 - Jeffrey Arriaga - Final Project - Home Page</title>
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href="../css/reset.css" rel="stylesheet" />
 	<link href="../css/styles.css" rel="stylesheet" />
@@ -14,44 +15,57 @@
 </head>
 
 <body>
+	<div id="bodyBackgroundControl"></div>
+	
+	
 
 
 	<header>
 		<div id="subHeader">
-			<h1 id="title">Papa Juan’s Mexican Pizzaria</h1>
+			<h1 id="title"><span class="colorSpan" style="color:rgb(170, 0, 0)">P</span>apa <span class="colorSpan" style="color:rgb(170, 0, 147)">J</span>uan’s <span class="colorSpan" style="color:rgb(0, 170, 57)">M</span>exican <span class="colorSpan" style="color:rgb(187, 200, 0)">P</span>izzaria</h1>
 		</div>
 		<nav id="navBar">
-			<ul>
-				<li class="navItem"><a href="default_finalproject.html" target="_self">Home</a></li>
-				<li class="navItem"><a href="about.html" target="_self">About</a></li>
-				<li class="navItem"><a href="contact.html" target="_self">Contact</a></li>
-				<li class="navItem"><a href="references.html" target="_self">References</a></li>
-			</ul>
+			<a href="#" id="navi"><img src="../images/img_424780.png" alt="" /></a>
+			<ul><li class="navItem"><a href="default_finalproject.html" target="_self">Home</a></li><li class="navItem"><a href="about.html" target="_self">About</a></li><li class="navItem"><a href="contact.html" target="_self">Contact</a></li><li class="navItem"><a href="references.html" target="_self">References</a></li></ul>
 		</nav>
 	</header>
+	
+
+
+
+
 
 	<section id="content">
-		<div>
+		<div id="innerBorder">
+		<img class="foodPics" src="../images/image.jpg"   /><img class="foodPics" src="../images/Pizza.jpg"   /><img class="foodPics" src="../images/Pizza2.jpg"   /><img class="foodPics" src="../images/PlaceHolder_Pizza.jpg"   /><img class="foodPics last2" src="../images/Place_Holder_2.jpg"   /><img class="foodPics last2" src="../images/Place_Holder_Image_Until_Make.jpg"   />
+		
+		<div id="menu">
 			<p>
-				Papa Juan’s Mexican Pizzeria specializes in making the most harmonious pizzas that provide an incredible
-				adventure for your taste buds. We not only care about the food and service we provide, but we also care
+				Papa Juan’s Mexican Pizzeria specializes in making the most harmonious pizzas that provide an
+				incredible
+				adventure for your taste buds. We not only care about the food and service we provide, but we also
+				care
 				about those who may need more.
 			</p>
-<br/>
+			<br />
 			<p>
-				We use the best spices obtained from local markets within our community to provide business and growth to
-				the very people we serve. With our expert chef’s trained by the owner himself on the excellent cooking
+				We use the best spices obtained from local markets within our community to provide business and
+				growth to
+				the very people we serve. With our expert chef’s trained by the owner himself on the excellent
+				cooking
 				from
 				where he grew up, we can make any order placed using the ingredients you select from our menu. Small
 				donations can be added to every order you desire and they will go directly to the doctors without
 				borders
 				cause.
 			</p>
-			<br/>
+			<br />
 			<p>
-				Papa Juans was established early into the pandemic when Papa J. saw the need for better, cheaper food
+				Papa Juans was established early into the pandemic when Papa J. saw the need for better, cheaper
+				food
 				for a
-				struggling economy, broken by the pandemic. Papa J. who at the time had been working within the hospital
+				struggling economy, broken by the pandemic. Papa J. who at the time had been working within the
+				hospital
 				industry fighting the coronavirus pandemic final decided to set up shop on August 24, 2020. When his
 				co-worker, a fellow medical professional heard of his efforts, word was put into the hospital
 				organization
@@ -63,27 +77,38 @@
 				organization by pressing the links below.
 			</p>
 		</div>
-
-
+	</div>
 	</section>
 
 	<footer id="footer">
+		<h2 id="tagLine">Mi pizza es su pizza</h2><br />
 
-		<h2>Mi pizza es su pizza</h2>
-		Phone: <a id="fPhone" href="tel:+11111117492">111-111-PIZA</a>
-		<form method="post" action="http://www.some-sql-serverthatdoesntexist.com/post/uemail" id="giveNewsletter">
-			<label for="userEmail" id="fEmail">Be apart of our Newsletter:</label>
-			<input id="userEmail" name="uEmail" type="text" placeholder="Your Email Here" required />
-			<button type="submit">Submit</button>
-		</form>
+		<div class="fItem">Phone: <a id="fPhone" href="tel:+11111111111">111-111-1111</a></div>
+		<br /><br />
 
-		<a href="https://www.facebook.com/Papa.Juans.Mexican.Pizzeria" target="_blank"><img src="../images/ico_fb.png"
-				alt="facebook icon" /></a>
+		<div class="fItem">
+
+			<form method="post" action="http://www.some-sql-serverthatdoesntexist.com/post/uemail" id="giveNewsletter">
+				<label for="userEmail" id="fEmail">Newsletter:</label>
+				<input id="userEmail" name="uEmail" type="text" placeholder="Email Address" required />
+				<button type="submit">Subscribe</button>
 
 
-		<a href="" target="_self">
-			<img src="../images/ico_tw.png" alt="twitter icon" />
-		</a>
+
+			</form>
+			<br />
+			
+
+
+		</div>
+
+		<div id="outsideForm">
+			<a class="icons" href="https://www.facebook.com/Papa.Juans.Mexican.Pizzeria" target="_blank"><img
+					class="icons" src="../images/ico_fb.png" alt="facebook icon" /></a>
+
+			<a class="icons" href="" target="_self"><img class="icons" src="../images/ico_tw.png"
+					alt="twitter icon" /></a>
+		</div>
 
 
 	</footer>

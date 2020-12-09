@@ -3,28 +3,59 @@
 
 body{
     background: url(../images/paper-1074131_1920.jpg);
+    background-size: cover;
+    max-width: 100vw;
+}
+
+
+#bodyBackgroundControl{
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.452);
+    z-index: -10;
+   
 }
 
 header {
-    position: fixed;
-    top:0;
-    width: 100vw;
-    max-height: 300px;
+    
+    width: 100%;
     background-color: brown;
 }
 
+
+
 #subHeader {
+    background-image: url(../images/wood-591631_1920.jpg);
+    background-size: cover;
     text-align: center;
-    padding: calc(2vh + 25px);
+    padding: calc(1.5vh + 20px);
     font-family: Trebuchet MS, Garamond, Tahoma ;
-    font-size: large;
+    font-size: calc(2vw + 10px);
+    object-fit: contain;
+}
+
+
+
+#navi {
+    display:none;
+}
+
+#navi > img {
+    padding:20px 0vw 20px 0vw;
+    max-width: 20px;
 }
 
 nav {
-    padding:20px 7vw 20px 7vw;
-    background-color: darkorange;
+    border-top: rgb(95, 236, 238) solid 4px;
+    border-bottom: rgb(95, 236, 238) solid 4px;
+    display: inline-block;
+    padding:0px 7vw 0px 7vw;
+    background-color: rgba(255, 170, 67, 0.781);
     font-size: calc(12px + 0.7vh);
-    max-height: calc(12px + 0.7vh + 40px);
+    width: calc(100% - 14vw);
+
 }
 
 nav#navBar > ul {
@@ -33,35 +64,177 @@ nav#navBar > ul {
 
 nav#navBar > ul > li{
     display: inline-block;
-    width: calc(25% - 33.5px);
-    padding-left:15px;
-    padding-right:15px;
+    width: 25%;
     text-align: center;
     white-space: nowrap;
+    padding:20px 0vw 20px 0vw;
 
 }
 
-nav#navBar > ul > li:first-of-type{
-    
-}
-
-
-nav#navBar > ul > li:last-of-type{
-    
-   
+nav#navBar > ul > li:hover{
+    background-color: pink;
 }
 
 
 #content{
-    margin: 300px 7vw 50px 7vw;
+    width: calc(100% - 14vw - 60px);
+    margin: 40px 7vw 50px 7vw;
     
-    padding: 30px 15px 30px 15px;
     background-color: beige;
+    border:  30px solid transparent;
+    border-image: url(../images/Border_Image.png) 25 round;
+    max-width: 100%
+}
+
+#innerBorder{
+    border:rgb(95, 236, 238) dotted 9px;
+    padding: 35px 10px 35px 10px;
 }
 
 footer{
-    background-color: darkturquoise;
+    background-color: rgb(95, 236, 238);
+    text-align: center;
+    border-top:8px solid teal;
+    max-width: 100%;
+    font-size: 20px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#tagLine{
+    width: 100vw;
+    padding:5px;
+    color:rgb(133, 0, 133);
+    background-color: rgba(136, 171, 236, 0.205);
+
+    border-bottom:dotted 5px teal ;
+    text-shadow: -1px -1px 1px white,  
+    1px -1px 1px white,
+    -1px 1px 1px white,
+     1px 1px 1px white;
+
+}
+
+.fItem{
+    margin-top: 10px;
+    width: 50%;
+}
+
+#outsideForm{
+    width: 300px;
+    margin-left:calc(50% - 150px);
 }
 
 
+
+
+/* -------------------------------------- */
+
+.foodPics{
+    display: inline;
+    max-width: 100%;
+    width: calc(25% );
+    font-size: 0px;
+    float: left;
+    background-color: brown;
+}
+.last2{
+    width: 50%;
+    width: calc(50% );
+}
+
+#menu{
+    clear:both;
+}
+
+@media screen and (min-height:800px){
+    footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        font-size: calc(1.5vh + 10px);
+        max-height: 23vh;
+    }
+    
+    #content{
+        margin-bottom: calc(19vh + 80px);
+        
+    }
+
+}
+
+
+@media screen and (min-width:1200px){
+
+
+    nav {
+        font-size: calc(12px + 0.7vw);
+       
+    }
+
+    footer{
+        font-size: calc(1vw + 10px);
+    }
+
+
+    .icons{
+        object-fit: contain;
+        width: 3vw;
+        max-width: 80px;
+    }
+
+    #content{
+        margin-bottom: calc(15vh + 80px);
+        font-size: calc(14px + 0.7vw);
+        border-width:  40px;
+        width: calc(100% - 14vw - 80px);
+    }
+}
+
+
+@media screen and (max-width:600px){
+
+    #navi{
+        display: block;
+        width: 100%;
+    }
+
+    nav > ul {
+        display: none;
+        
+    }
+
+    #navi:hover + ul, nav > ul:hover {
+        display: block;
+      }
+
+    nav#navBar > ul > li {
+        padding:10px 0vw 10px 0vw;
+        display: block;
+        width: 100%;
+    }
+
+    #content{
+        margin: 0px 0px 0px 0px;
+        padding: 30px 0px 30px 0px;
+        width: calc(100% - 60px);
+        max-width: 100%;
+        
+    }
+
+    #innerBorder{
+    border:rgb(95, 236, 238) dotted 9px;
+    padding: 35px 10px 35px 10px;
+}
+
+    footer{
+        position: static;
+        font-size: calc(2vw + 10px);
+        max-height: 100vh;
+    }
+
+    .fItem{
+        width: 100%;   
+    }
+}
 
