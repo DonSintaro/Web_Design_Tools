@@ -58,6 +58,13 @@ nav {
 
 }
 
+.fillSpace{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding:20px 0vw 20px 0vw;
+}
+
 nav#navBar > ul {
     max-width: 86vw;
 }
@@ -67,7 +74,7 @@ nav#navBar > ul > li{
     width: 25%;
     text-align: center;
     white-space: nowrap;
-    padding:20px 0vw 20px 0vw;
+    
 
 }
 
@@ -120,6 +127,12 @@ footer{
     width: 50%;
 }
 
+
+.fAddress:hover{
+    text-decoration: underline;
+    color: crimson;
+}
+
 #outsideForm{
     width: 300px;
     margin-left:calc(50% - 150px);
@@ -128,7 +141,7 @@ footer{
 
 
 
-/* -------------------------------------- */
+/* ------------------Home-------------------- */
 
 .foodPics{
     display: inline;
@@ -137,14 +150,87 @@ footer{
     font-size: 0px;
     float: left;
     background-color: brown;
+    opacity: 60%;
+    transition: opacity .3s ease-in ;
+    -ms-transition: opacity .3s ease-in ;
+    -o-transition: opacity .3s ease-in ; 
+    -moz-transition: opacity .3s ease-in ; 
+    -webkit-transition: opacity .3s ease-in ; 
+}
+
+.foodPics:hover{
+    opacity: 1;
 }
 .last2{
     width: 50%;
     width: calc(50% );
 }
 
-#menu{
+#activeContent{
+    padding-top: 35px;
     clear:both;
+}
+
+.foodSection{
+    text-align: center;
+    background-color: rgba(169, 169, 169, 0.685);
+}
+
+.foodOption{
+    border-bottom: dashed rgb(95, 236, 238) 3px;
+}
+
+.pizzaPart{
+    padding: 4px 5px 0px 8px;
+}
+
+.buildPizza{
+    column-count: 2;
+    background-color: rgba(169, 169, 169, 0.349);
+    padding-top:5px;
+    clear:both;
+}
+
+.buildPizza > div > ul > li:nth-of-type(even){
+    background-color: rgba(255, 255, 255, 0.349);
+}
+
+/*------------contact-----------*/
+.inputFields{
+    width:calc(100% - 4px);
+    
+}
+
+#inputFieldA{
+    width:calc(100% - 2);
+}
+
+
+
+#textAreaP{
+    margin-bottom:0;
+}
+
+textarea{
+    max-width: calc(100%);
+    min-width: calc(100%);
+    max-height: 300px;
+    min-height: 100px;
+    padding: 0;
+
+}
+
+#buttonP{
+    margin-top:0;
+    margin-bottom: 0px;
+}
+
+#buttonSub{
+
+    height: 45px;
+    width: 100px;
+    background-color: teal;
+    color: #ffffff;
 }
 
 @media screen and (min-height:800px){
@@ -194,6 +280,15 @@ footer{
 
 @media screen and (max-width:600px){
 
+
+    .buildPizza{
+        column-count: 1;
+    }
+
+    .buildPizza > div > ul > li , .buildPizza > li{
+        text-align: center;
+    }
+
     #navi{
         display: block;
         width: 100%;
@@ -223,8 +318,8 @@ footer{
     }
 
     #innerBorder{
-    border:rgb(95, 236, 238) dotted 9px;
-    padding: 35px 10px 35px 10px;
+    border:none;
+    padding: 5px 5px 5px 5px;
 }
 
     footer{
@@ -236,5 +331,21 @@ footer{
     .fItem{
         width: 100%;   
     }
+}
+
+
+
+@keyframes foodPictures1{
+
+    /* number of pictures x 2 - 1 = 7   ->   100/7= 14.285 */
+
+    0% {background-image: url(../images/image.jpg);}
+    14.285% {background-image: url(../images/image.jpg);}
+    28.571% {background-image: url(../images/Pizza.jpg);}
+    42.857% {background-image: url(../images/Pizza.jpg);}
+    57.142% {background-image: url(../images/Pizza2.jpg);}
+    71.428% {background-image: url(../images/Pizza2.jpg);}
+    85.714% {background-image: url(../images/PlaceHolder_Pizza.jpg);}
+    100% {background-image: url(../images/PlaceHolder_Pizza.jpg);}
 }
 
