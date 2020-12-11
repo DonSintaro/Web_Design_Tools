@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+ }
+
+
+address, article, aside, body, 
+div, footer, h1, h2, h3, h4, h5, h6, header, html, img, 
+li, main, nav, nav a, p, section, ul {
+   margin: 0px;
+   padding: 0px;
+   border: 0px;
+   text-decoration: none;
+   font-style: normal;
+   
+}
+
+a {
+   text-decoration: none;
+   color:black;
+}
+
+
+ul, ol {
+   list-style: none;
+}
+
+nav ul {
+   list-style: none;
+   list-style-image: none;
+}
+
+
